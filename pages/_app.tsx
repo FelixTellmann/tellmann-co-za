@@ -1,5 +1,8 @@
 import App, { AppProps } from 'next/app';
 import React, { FC, Fragment, CSSProperties } from 'react';
+import 'styles/reset.scss';
+import 'styles/typography.scss';
+import 'styles/sections.scss';
 
 import { useState, useEffect } from "react";
 import { Theme } from "components";
