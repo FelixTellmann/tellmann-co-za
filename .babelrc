@@ -1,0 +1,16 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    "inline-react-svg",
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "public": "./public"
+        }
+      }
+    ]
+  ]
+}

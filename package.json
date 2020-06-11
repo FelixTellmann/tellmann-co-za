@@ -1,0 +1,61 @@
+{
+    "name": "tellmann-co-za",
+    "version": "0.1.0",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "description": "Tellmann.co.za Professional web development.",
+    "quokka": {
+        "babel": true,
+        "plugins": [
+            "babel-alias-quokka-plugin"
+        ],
+        "alias": {
+            "components": "./components",
+            "pages": "./pages",
+            "library": "./library",
+            "public": "./public"
+        }
+    },
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.9.0",
+        "@testing-library/react": "^10.2.1",
+        "@types/chrome": "0.0.114",
+        "@types/jest": "^26.0.0",
+        "@types/mysql": "^2.15.13",
+        "@types/node": "^14.0.13",
+        "@types/react": "^16.9.36",
+        "@types/styled-jsx": "^2.2.8",
+        "@zeit/next-sass": "^1.0.1",
+        "alias-quokka-plugin": "^0.1.0",
+        "babel-alias-quokka-plugin": "^1.0.9",
+        "babel-jest": "^26.0.1",
+        "babel-plugin-inline-react-svg": "^1.1.1",
+        "beautiful-react-hooks": "^0.25.2",
+        "date-fns": "^2.11.1",
+        "dotenv": "^8.2.0",
+        "gray-matter": "^4.0.2",
+        "highlight.js": "^10.0.3",
+        "identity-obj-proxy": "^3.0.0",
+        "isomorphic-unfetch": "^3.0.0",
+        "jest": "^26.0.1",
+        "mysql2": "^2.1.0",
+        "next": "^9.3.5",
+        "node-sass": "^4.14.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-icons": "^3.10.0",
+        "react-test-renderer": "^16.13.1",
+        "remark": "^12.0.0",
+        "remark-html": "^11.0.1",
+        "sass-resources-loader": "^2.0.3",
+        "ts-jest": "^26.1.0",
+        "ts-node": "^8.10.2",
+        "tsconfig-paths": "^3.9.0",
+        "typed.js": "^2.0.11",
+        "typescript": "^3.9.5",
+        "url-loader": "^4.1.0"
+    }
+}

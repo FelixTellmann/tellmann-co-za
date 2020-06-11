@@ -1,0 +1,19 @@
+@mixin responsive($alias) {
+    @if $alias == 'tablet' {
+        @media screen and (min-width: 800px) and (max-width: 1280px) {
+            @content;
+        }
+    } @else if $alias == 'small-tablet' {
+        @media screen and (min-width: 500px) and (max-width: 800px) {
+            @content;
+        }
+    } @else if $alias == 'mobile' {
+        @media screen and (max-width: 500px) {
+            @content;
+        }
+    } @else if $alias == 'fullscreen' {
+        @media screen and (max-width: 1280px) {
+            @content;
+        }
+    }
+}
