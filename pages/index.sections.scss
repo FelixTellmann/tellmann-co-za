@@ -1,5 +1,4 @@
 .hero {
-
     /*&:after {
         position: absolute;
         content: '01';
@@ -141,29 +140,12 @@
 }
 
 .logo-banner {
-    height: 60px;
-    display: grid;
-    overflow: hidden;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 30px;
-
-    .logo-banner__item {
-        opacity: 0.8;
-        margin: 0 auto;
-        filter: grayscale(100%); /**/
-    }
-
-    .logo-banner__item--shopify {
-        height: 100%;
-        img {
-            height: 100%;
-        }/**/
-    }
-
-    img {
-        width: auto;
+    .logo-banner__image {
+        width: 100%;
         max-width: 100%;
-        max-height: 60px;
+        height: auto;
+        max-height: 100%;
+        opacity: 0.8;
+        filter: grayscale(100%);
     }
 }
