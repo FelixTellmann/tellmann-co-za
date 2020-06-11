@@ -1,5 +1,28 @@
-import React, { FC } from "react";
-import './Portfolio.scss';
+import React, { FC, useEffect, useRef } from "react";
+import './index.sections.scss';
+import { Typed } from 'components';
+
+export const Hero: FC = () => {
+    const content = [`We build eCommerce <br /> Websites.`];
+    return (
+      <section className="hero section section--hero">
+          <div className="section__wrapper">
+              <div className="hero__content">
+                  <h1 className="hero">
+                      Welcome to <span className="highlight">Tellmann</span>, <br />
+                      <Typed content={content}
+                             typeSpeed={40}
+                             backSpeed={17}
+                             backDelay={1850}
+                             startDelay={1000}
+                             loop={false}
+                             cursorChar={'|'} />
+                  </h1>
+              </div>
+          </div>
+      </section>
+    );
+};
 
 export const Portfolio: FC = () => {
     return (
@@ -42,7 +65,9 @@ export const Portfolio: FC = () => {
                   </li>
                   <li>
                       <div className="portfolio__item">
-                          <img src="/portfolio/TurningPoint.jpg" alt="Turning Point Website" className="portfolio__image" />
+                          <img src="/portfolio/TurningPoint.jpg"
+                               alt="Turning Point Website"
+                               className="portfolio__image" />
                       </div>
                       <a href="https://www.turningpoint.co.za" className="portfolio__link">
                           <h3>Turning Point</h3>
@@ -57,6 +82,32 @@ export const Portfolio: FC = () => {
                       </a>
                   </li>
               </ul>
+          </div>
+      </section>
+    );
+};
+
+export const LogoBanner: FC = () => {
+    return (
+      <section className="section section--logo-banner">
+          <div className="section__wrapper">
+              <div className="logo-banner">
+                  <div className="logo-banner__item">
+                      <img src="/nextjs-3.svg" alt="nextjs-logo" />
+                  </div>
+                  <div className="logo-banner__item">
+                      <img src="/nodejs.svg" alt="nextjs-logo" />
+                  </div>
+                  <div className="logo-banner__item logo-banner__item--shopify">
+                      <img src="/shopify-2.svg" alt="nextjs-logo" />
+                  </div>
+                  <div className="logo-banner__item">
+                      <img src="/kindpng_1280187.png" alt="nextjs-logo" />
+                  </div>
+                  <div className="logo-banner__item">
+                      <img src="/Amazon_Web_Services-Logo.wine.svg" alt="nextjs-logo" />
+                  </div>
+              </div>
           </div>
       </section>
     );

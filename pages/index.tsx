@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Hero, LogoBanner, Portfolio } from 'components/sections';
-
+import { Hero, Portfolio, LogoBanner } from './index.sections';
 function Index(ctx) {
 
     return (
-        <>
-            <Hero />
-
-            <LogoBanner />
-            <Portfolio />
-            {/*<Hero />*/}
-        </>
+      <>
+          <Hero />
+          <LogoBanner />
+          <Portfolio />
+          {/*<Hero />*/}
+      </>
 
     );
 }
