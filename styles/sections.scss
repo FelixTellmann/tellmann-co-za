@@ -28,8 +28,8 @@ body {
 
     &.section--hero, {
         position: relative;
-        height: calc(100vh - 10rem);
-        min-height: 60rem;
+        height: calc(100vh);
+        min-height: 75rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -46,12 +46,14 @@ body {
         }
 
         @include responsive('small-tablet') {
+            min-height: 60rem;
             height: 80vh;
             background-position: 90% 140%;
             background-size: 138%; /**/
         }
 
         @include responsive('mobile') {
+            min-height: 60rem;
             height: 80vh;
             background-position: 90% 421px;
             background-size: 135%;
