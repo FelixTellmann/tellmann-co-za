@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, {
         font-size: calc(var(--font-size-hero) * 0.8);
     }
     @include responsive('mobile') {
-        font-size: calc(var(--font-size-hero) * 0.6666666);
+        font-size: calc(var(--font-size-hero) * 0.5);
     }
 }
 
@@ -106,6 +106,12 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-headings);
+    @include responsive('small-tablet') {
+        font-size: calc(var(--font-size-h2) * 0.8);
+    }
+    @include responsive('mobile') {
+        font-size: calc(var(--font-size-h2) * 0.5);
+    }
 }
 
 h3 {

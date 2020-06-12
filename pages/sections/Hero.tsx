@@ -4,14 +4,14 @@ import './Hero.scss';
 
 export type HeroProps = {
   content: string[]
-  title: string
+  heroTitle: string
 }
 
-export const Hero: FC<HeroProps> = ({ content, title }) => {
+export const Hero: FC<HeroProps> = ({ content, heroTitle }) => {
 
   return (
     <div className="hero__content">
-      <h1 dangerouslySetInnerHTML={{ __html: title }}>
+      <h1 dangerouslySetInnerHTML={{ __html: heroTitle }}>
       </h1>
       <h1>
         <Typed content={content}

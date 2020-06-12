@@ -10,6 +10,7 @@ type SectionProps = {
   background?: string
   fullscreen?: boolean
   position?: 'sticky' | 'relative' | 'fixed' | 'absolute'
+  title?: string
   border?: boolean
   className?: string
   id?: string
@@ -22,7 +23,7 @@ export const Section: FC<SectionProps> & { Header, Footer, Hero, LogoBanner, Por
       {
         Children.map(children, (child: FC & { props: SP }) => {
           if (!isValidElement(child)) return;
-          const { props, props: { id, className = "", position, fullscreen, border } } = child;
+          const { props, props: { id, className = "", position, fullscreen, border, title } } = child;
 
           return (
             <section id={id}
@@ -33,7 +34,10 @@ export const Section: FC<SectionProps> & { Header, Footer, Hero, LogoBanner, Por
               {
                 fullscreen
                   ? child
-                  : <div className="section__wrapper">{child}</div>
+                  : <div className="section__wrapper">
+                    {title && <h2 className="section__title">{title}</h2>}
+                    {child}
+                  </div>
               }
             </section>
           );

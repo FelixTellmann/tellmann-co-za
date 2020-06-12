@@ -96,10 +96,10 @@
                 text-decoration: none;
                 transition: color ease-in-out 0.17s;
 
-                &:last-of-type {
+                /*&:last-of-type {
                     margin-right: var(--spacing-6);
                 }
-
+*/
                 &:hover, &:focus, &:active, &.active {
                     outline: none;
                     color: var(--color-accent);

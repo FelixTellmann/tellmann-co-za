@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import './LogoBanner.scss';
 
-
 type LogoBannerProps = {
   logos: [
     {
@@ -17,7 +16,7 @@ export const LogoBanner: FC<LogoBannerProps> = ({ logos }) => {
     <div className="logo-banner">
       {
         logos.map(({ src, alt }) => {
-          return <img className="logo-banner__image" src={src} alt={alt} />;
+          return <img key={src} className="logo-banner__image" src={src} alt={alt} />;
         })
       }
     </div>

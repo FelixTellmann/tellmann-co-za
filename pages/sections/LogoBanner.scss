@@ -3,4 +3,14 @@
     @include responsive('small-tablet') {
         padding: var(--spacing-4) 0;
     }
+
+    /* TODO needs refactoring for when more than 1 image!*/
+    .logo-banner__image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        opacity: 0.8;
+        filter: grayscale(100%);
+    }
 }

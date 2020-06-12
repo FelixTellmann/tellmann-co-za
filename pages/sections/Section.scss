@@ -9,12 +9,22 @@
         box-shadow: var(--header-border-bottom);
     }
 
+    .section__title {
+        padding: var(--section-padding) 0;
+        text-align: center;
+        @include responsive('mobile') {
+            padding: var(--spacing-8) 0;
+        }
+    }
+
     .section__wrapper {
         width: var(--page-container-max-width);
         margin: 0 auto;
         @include responsive('fullscreen') {
             width: calc(100% - var(--spacing-4) * 2);
-            margin: 0 var(--spacing-4);
+        }
+        @include responsive('mobile') {
+            margin: 0 var(--spacing-2);
         }
     }
 }

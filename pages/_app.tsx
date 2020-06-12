@@ -5,7 +5,6 @@ import { Section } from './sections/Section';
 import 'styles/reset.scss';
 import 'styles/theme.scss';
 import 'styles/typography.scss';
-import 'styles/sections.scss';
 
 import { useState } from "react";
 import { Border } from "components";
