@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Link from "next/link";
+
 import { Section } from "./sections/Section";
 import { Button } from "components/Button";
 
@@ -81,14 +83,19 @@ function Index(ctx) {
   return (
     <>
       <Section>
-        <Section.Hero className="hero" {...heroData} />
+        <Section.Hero id="home" className="hero" {...heroData} />
         <Section.TextBlock border
                            content={`<h2>We are dedicated in helping <span className="highlight">you</span> develop an attractive, simple to navigate store that will have customers purchasing your goods online.</h2>`} />
         <Section.LogoBanner border logos={[{ src: "/logo-banner.png", alt: "Logo Banner" }]} />
-        <Section.Portfolio portfolioItems={portfolioData}
+        <Section.Portfolio id="portfolio" portfolioItems={portfolioData}
                            title={`We have helped the following companies get started.`} />
         <Section.FeatureBlocks title={`How does it work?`} listStyle={"ordered"} content={featureBlocksData} />
-        <div className="cta"><Button>Get started Now</Button></div>
+        <div className="cta" id="contact">
+          <Link href="//wa.me/27763934356?text=Hi%2C%20I%27m%20interested%20in%20your%20product.">
+            <a target="_blank"><Button>Get started Now</Button></a>
+          
+          </Link>
+        </div>
       </Section>
     </>
   

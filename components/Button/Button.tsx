@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import './Button.scss';
 
 type ButtonProps = {
-    className: string
+    className?: string
 }
 
 export const Button: FC<ButtonProps> = ({ children, className = '' }) => {
