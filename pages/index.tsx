@@ -6,11 +6,16 @@ function Index(ctx) {
 
   return (
     <>
-      {/*<Section>
-        <Section.Header fullscreen={true} position='sticky' className="highlight"/>
-      </Section>*/}
-      <Hero />
-      <LogoBanner />
+      <Section>
+        <Section.Hero
+          className="hero"
+          content={[`We build eCommerce <br /> Websites.`]}
+          title={`Welcome to <span class="highlight">Tellmann</span>, <br />`}
+        />
+        <Section.LogoBanner border logos={[{ src: '/logo-banner.png', alt: 'Logo Banner' }]} />
+      </Section>
+      {/*<Hero />*/}
+      {/*<LogoBanner />*/}
       <Portfolio />
       {/*<Hero />*/}
     </>

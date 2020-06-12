@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useRef } from "react";
 import TypedJS from 'typed.js';
 
-type TypedProps = {
+export type TypedProps = {
     content: string[]
     typeSpeed?: number
     backSpeed?: number
@@ -15,7 +15,6 @@ type TypedProps = {
     attr?: string
     bindInputFocusEvents?: boolean
     shuffle?: boolean
-
 }
 
 export const Typed: FC<TypedProps> = ({ content, ...rest }) => {

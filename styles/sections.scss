@@ -16,46 +16,6 @@ body {
         }
     }
 
-    &.section--hero, {
-        position: relative;
-        height: calc(100vh);
-        min-height: 75rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: var(--spacing-4);
-        background-image: url('/background-red.svg');
-        background-repeat: no-repeat;
-        background-position: 370px 400px;
-        background-size: 92%;
-
-        @include responsive('tablet') {
-            height: 80vh;
-            background-position: 90% 700px;
-            background-size: 138%;
-        }
-
-        @include responsive('small-tablet') {
-            min-height: 60rem;
-            height: 80vh;
-            background-position: 90% 140%;
-            background-size: 138%; /**/
-        }
-
-        @include responsive('mobile') {
-            min-height: 60rem;
-            height: 80vh;
-            background-position: 90% 421px;
-            background-size: 135%;
-        }
-    }
-
-    &.section--logo-banner {
-        padding: var(--spacing-8) 0;
-        background-color: rgba(var(--color-background-rgb), 0.7);
-        box-shadow: var(--header-border-bottom);
-    }
-
     &.section--portfolio {
         position: relative;
         /* height: calc(100vh - 10rem);

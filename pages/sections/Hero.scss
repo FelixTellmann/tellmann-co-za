@@ -1,0 +1,64 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--spacing-16) * 3) var(--spacing-4);
+    background-image: url('/background-red.svg');
+    background-repeat: no-repeat;
+    background-position: 370px 400px;
+    background-size: 92%;
+    @include responsive('fullscreen') {
+       /* height: 80vh;*/
+        background-position: 90% 700px;
+        background-size: 138%;
+    }
+    @include responsive('small-tablet') {
+       /* height: 80vh;
+        min-height: 60rem;*/
+        background-position: 90% 140%;
+        background-size: 138%; /**/
+    }
+    @include responsive('mobile') {
+        /*height: 80vh;
+        min-height: 60rem;*/
+        padding: calc(var(--spacing-16) * 2) var(--spacing-4);
+        background-position: 90% 421px;
+        background-size: 135%;
+    }
+
+    .hero__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 28rem;
+
+        &:before {
+            position: absolute;
+            content: '';
+            z-index: -1;
+            bottom: 30%;
+            left: -3%;
+            width: 160px;
+            height: 247px;
+            opacity: 0.08;
+            background-color: var(--color-text);
+            mask: url(/circle.svg);
+            -webkit-mask: url(/circle.svg);
+            mask-size: 11.1%;
+            -webkit-mask-size: 11.1%;
+        }
+    }
+
+    .scroll-down {
+        position: absolute;
+        bottom: 3rem;
+
+        .scroll-icon {
+            fill: var(--color-accent)
+        }
+    }
+
+
+}

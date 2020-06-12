@@ -2,7 +2,6 @@
     z-index: 1000;
     top: var(--border-width);
     background-color: rgba(var(--color-background-rgb), 0.7);
-    box-shadow: var(--header-border-bottom);
     transition: 0.1s ease-in;
     backdrop-filter: saturate(180%) blur(5px);
 

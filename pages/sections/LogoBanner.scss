@@ -1,0 +1,6 @@
+.logo-banner {
+    padding: var(--spacing-8) 0;
+    @include responsive('small-tablet') {
+        padding: var(--spacing-4) 0;
+    }
+}

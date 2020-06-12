@@ -3,18 +3,17 @@ import React, { FC, Fragment, CSSProperties, useRef } from 'react';
 import { Section } from './sections/Section';
 
 import 'styles/reset.scss';
+import 'styles/theme.scss';
 import 'styles/typography.scss';
 import 'styles/sections.scss';
 
 import { useState } from "react";
 import { Border } from "components";
 
-
 export type Props = AppProps
 
 export const Root: FC<Props> = ({ pageProps, Component }) => {
   const [loading, setLoading] = useState(false);
-
 
   const header = {
     logo: {
@@ -44,7 +43,7 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
     <>
       <Border loading={loading} width="7px" duration={3} />
       <Section>
-        <Section.Header position="sticky" data={header} className='header' />
+        <Section.Header border position="sticky" data={header} className="header" />
       </Section>
       <main className="page">
         <Component {...pageProps} />
