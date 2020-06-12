@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoLogoWhatsapp, IoMdMenu } from "react-icons/io";
 import { useGlobalEvent, useMouseEvents } from "beautiful-react-hooks";
 
-import './Header.scss';
+import "./Header.scss";
 
 export type HeaderProps = {
   data: {
@@ -23,7 +23,7 @@ export type HeaderProps = {
 }
 
 export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => {
-
+  
   const headerSectionRef = useRef();
   const [headerOnScroll, setHeaderOnScroll] = useState(false);
   const [openNavMenu, setOpenNavMenu] = useState(false);
@@ -31,12 +31,12 @@ export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => 
   const onNavMenuClick = () => setOpenNavMenu(true);
   const { onMouseOver, onMouseLeave } = useMouseEvents(headerSectionRef);
   const hoverTimer: { current: ReturnType<typeof setTimeout> } = useRef();
-
+  
   onMouseOver(() => {
     clearTimeout(hoverTimer.current);
     setIsMouseOverHeader(true);
   });
-
+  
   onMouseLeave((e) => {
     if (openNavMenu && window.scrollY > 0) {
       hoverTimer.current = setTimeout(() => {
@@ -46,8 +46,8 @@ export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => 
     }
     setIsMouseOverHeader(false);
   });
-
-  useGlobalEvent('scroll')((event) => {
+  
+  useGlobalEvent("scroll")((event) => {
     if (window.innerWidth > 800 && window.outerWidth > 800 && !isMouseOverHeader) {
       if (openNavMenu && window.scrollY > 0) {
         setTimeout(() => {
@@ -59,9 +59,9 @@ export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => 
       }
     }
   });
-
+  
   return (
-    <header ref={headerSectionRef} className={`${!openNavMenu && headerOnScroll ? 'scrolled-down' : ''}`}>
+    <header ref={headerSectionRef} className={`${!openNavMenu && headerOnScroll ? "scrolled-down" : ""}`}>
       <Link href={logo.link}>
         <a className="logo">
           <img src={logo.src} alt="logo" />
@@ -86,9 +86,9 @@ export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => 
               <Link key={icon.link} href={icon.link}>
                 <a className="social-icons__link">
                   {
-                    React.createElement(iconType === 'io'
-                      ? require('react-icons/io')[icon.src]
-                      : require('react-icons/fa')[icon.src])
+                    React.createElement(iconType === "io"
+                                        ? require("react-icons/io")[icon.src]
+                                        : require("react-icons/fa")[icon.src])
                   }
                 </a>
               </Link>

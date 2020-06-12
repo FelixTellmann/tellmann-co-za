@@ -47,6 +47,9 @@ export const Root: FC<Props> = ({ pageProps, Component }) => {
       <main className="page">
         <Component {...pageProps} />
       </main>
+     {/* <Section>
+        <Section.Footer border position="sticky" data={header} className="footer" />
+      </Section>*/}
     </>
   );
 };

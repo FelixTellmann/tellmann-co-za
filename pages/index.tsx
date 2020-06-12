@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Section } from "./sections/Section";
+import { Button } from "components/Button";
 
 function Index(ctx) {
   
@@ -84,8 +85,10 @@ function Index(ctx) {
         <Section.TextBlock border
                            content={`<h2>We are dedicated in helping <span className="highlight">you</span> develop an attractive, simple to navigate store that will have customers purchasing your goods online.</h2>`} />
         <Section.LogoBanner border logos={[{ src: "/logo-banner.png", alt: "Logo Banner" }]} />
-        <Section.Portfolio portfolioItems={portfolioData} title={`Need a Website? Look at what we've done!`} />
-        <Section.FeatureBlocks title={`How does it work?`} listStyle={'ordered'} content={featureBlocksData} />
+        <Section.Portfolio portfolioItems={portfolioData}
+                           title={`We have helped the following companies get started.`} />
+        <Section.FeatureBlocks title={`How does it work?`} listStyle={"ordered"} content={featureBlocksData} />
+        <div className="cta"><Button>Get started Now</Button></div>
       </Section>
     </>
   

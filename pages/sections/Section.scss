@@ -28,3 +28,12 @@
         }
     }
 }
+
+.cta {
+    padding: var(--spacing-8) 0 8rem;
+    text-align: center;
+
+    .button {
+        transform: scale(1.6)
+    }
+}
