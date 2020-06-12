@@ -13,3 +13,5 @@ export const TextBlock: FC<FeatureProps> = ({ content }) => {
     <div className="text-block" dangerouslySetInnerHTML={{ __html: content }} />
   );
 };
+
+export default () => <h1>This is the 404 page</h1>

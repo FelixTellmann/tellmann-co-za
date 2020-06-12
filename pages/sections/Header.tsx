@@ -100,3 +100,5 @@ export const Header: FC<HeaderProps> = ({ data: { logo, navItems, icons } }) => 
     </header>
   );
 };
+
+export default () => <h1>This is the 404 page</h1>

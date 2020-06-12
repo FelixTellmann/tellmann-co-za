@@ -59,3 +59,5 @@ export const Footer: FC<FooterProps> = ({ data: { logo, navItems, icons } }) => 
     </footer>
   );
 };
+
+export default () => <h1>This is the 404 page</h1>

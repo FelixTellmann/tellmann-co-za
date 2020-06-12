@@ -37,3 +37,5 @@ export const FeatureBlocks: FC<FeatureBlocksProps> = ({ content, listStyle }) =>
     </div>
   );
 };
+
+export default () => <h1>This is the 404 page</h1>
