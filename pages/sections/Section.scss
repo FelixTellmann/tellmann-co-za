@@ -1,0 +1,16 @@
+.section {
+    width: 100%;
+
+    &.section--sticky {
+        position: sticky;
+    }
+
+    .section__wrapper {
+        width: var(--page-container-max-width);
+        margin: 0 auto;
+        @include responsive('fullscreen') {
+            width: calc(100% - var(--spacing-4) * 2);
+            margin: 0 var(--spacing-4);
+        }
+    }
+}
