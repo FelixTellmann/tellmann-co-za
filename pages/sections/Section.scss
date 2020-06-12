@@ -13,7 +13,7 @@
         padding: var(--section-padding) 0;
         text-align: center;
         @include responsive('mobile') {
-            padding: var(--spacing-8) 0;
+            padding: var(--spacing-8) 0 var(--spacing-4);
         }
     }
 

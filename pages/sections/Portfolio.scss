@@ -10,10 +10,12 @@
     @include responsive('small-tablet') {
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 50px;
+        padding: calc(var(--spacing-section)) 0;
     }
     @include responsive('mobile') {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 50px;
+        padding: var(--spacing-8) var(--spacing-4)
     }
 }
 

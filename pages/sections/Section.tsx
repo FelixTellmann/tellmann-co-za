@@ -4,6 +4,8 @@ import { Footer, FooterProps } from './Footer';
 import { Hero, HeroProps } from './Hero';
 import { LogoBanner } from './LogoBanner';
 import { Portfolio } from './Portfolio';
+import { TextBlock } from './TextBlock';
+import { FeatureBlocks } from './FeatureBlocks';
 import './Section.scss';
 
 type SectionProps = {
@@ -17,7 +19,7 @@ type SectionProps = {
 }
 export type SP = SectionProps;
 
-export const Section: FC<SectionProps> & { Header, Footer, Hero, LogoBanner, Portfolio } = ({ children }) => {
+export const Section: FC<SectionProps> & { Header, Footer, Hero, LogoBanner, Portfolio, TextBlock, FeatureBlocks } = ({ children }) => {
   return (
     <>
       {
@@ -53,3 +55,7 @@ Section.Footer = Footer;
 Section.Hero = Hero;
 Section.LogoBanner = LogoBanner;
 Section.Portfolio = Portfolio;
+Section.TextBlock = TextBlock;
+Section.FeatureBlocks = FeatureBlocks;
+
+

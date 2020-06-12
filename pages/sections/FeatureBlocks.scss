@@ -1,0 +1,10 @@
+.feature {
+    padding: calc(var(--spacing-section) * 2) var(--spacing-section);
+    text-align: center;
+    @include responsive('small-tablet') {
+        padding: calc(var(--spacing-section)) 0;
+    }
+    @include responsive('mobile') {
+        padding: var(--spacing-8) var(--spacing-4)
+    }
+}
