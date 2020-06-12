@@ -7,7 +7,7 @@ import { Button } from "components/Button";
 function Index(ctx) {
   
   const heroData = {
-    content: [`We build eCommerce <br /> Websites.`],
+    content: [`We develop your <br /> successful online store.`],
     heroTitle: `Welcome to <span class="highlight on-hover">Tellmann</span>, <br />`,
   };
   
