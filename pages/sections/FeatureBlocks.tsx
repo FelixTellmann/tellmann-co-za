@@ -7,7 +7,7 @@ export type FeatureBlocksProps = {
     icon: string
     description: string
   }[]
-  listStyle?: "ordered" | "unordered"
+  listStyle?: "ordered" | "unordered" | "random"
 }
 
 export const FeatureBlocks: FC<FeatureBlocksProps> = ({ content, listStyle }) => {
